@@ -80,7 +80,15 @@ label {
     text-transform: capitalize;
 }
 
-legend {
+#topfield legend {
+    float: left;
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin-bottom: 1.75em;
+    margin-top: 1em;
+    padding-top: 1em; 
+}
+#bottomfield legend {
     float: left;
     font-size: 1.4em;
     font-weight: bolder;
