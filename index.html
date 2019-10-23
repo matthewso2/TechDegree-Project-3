@@ -24,8 +24,7 @@
         <form class="row" action="index.html" method="post">
 
             <fieldset id="topfield">
-
-                <div id="main">
+               
                     <legend>Contact Information</legend>
                     
                     <div class="flex-divs"><label for="name">full name</label>
@@ -101,31 +100,45 @@
 
                     <div class="flex-divs"><label for="zip">zip code</label>
                     <input type="text" id="zip" name="user_zip"></div>
-
-                </div>
+              
             </fieldset>
 
             <fieldset id="bottomfield">
-                <div>
+                
                 <legend>Newsletter</legend>
 
+                <div class="flex-bot">
                 <p>Select the newsletters you would like to recieve</p>
+                
+                <div>
+                    <input class="news" type="checkbox" name="news" id="html" value="html"><label class="newslabel" for="html">HTML News</label><br>
+                </div>
 
-                <input class="news" type="checkbox" name="news" id="html" value="html"><label class="newslabel" for="html">HTML News</label><br>
-                <input class="news" type="checkbox" name="news" id="css" value="css"><label class="newslabel" for="css"> CSS News</label><br>
-                <input class="news" type="checkbox" name="news" id="js" value="js"><label class="newslabel" for="js">Javascript News</label>
+                <div>
+                    <input class="news" type="checkbox" name="news" id="css" value="css"><label class="newslabel" for="css"> CSS News</label><br>
+                </div>
+
+                <div>
+                    <input class="news" type="checkbox" name="news" id="js" value="js"><label class="newslabel" for="js">Javascript News</label>
+                </div>
 
                 <p>Newsletter format</p>
-                <input class="news" type="radio" name="news" id="htmlr" value="htmlr"><label class="newslabel" for="htmlr">HTML</label><br>
-                <input class="news" type="radio" name="news" id="plain" value="plain"><label class="newslabel" for="plain">Plain text</label>
+
+                <div>
+                    <input class="news" type="radio" name="news" id="htmlr" value="htmlr"><label class="newslabel" for="htmlr">HTML</label><br>
+                </div>
+
+                <div>
+                    <input class="news" type="radio" name="news" id="plain" value="plain"><label class="newslabel" for="plain">Plain text</label>
+                </div>
 
                 <div id="areatext"><label id="topicsl" for="topic">Other topics you'd like to hear about</label>
                 <textarea id="topic" name="user_topic"></textarea></div>
 
                 <button id="submit" type="submit">Sign Up</button>
                 <p class="copyright"><em>Copyright The Code Review</em></p>
-                
             </div>
+            
             </fieldset>
             
 
